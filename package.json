@@ -1,15 +1,26 @@
 {
   "name": "its-five-oclock",
   "version": "1.0.0",
+  "description": "It's 5 O'Clock Somewhere celebrates socializing and drinking around the world!",
+  "author": [
+    "Adam Edwards adamcharlesewards@gmail.com",
+    "Michael Solati mkslt04@gmail.com"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumblex/angularattack2016-5oclock.git"
+  },
+  "homepage": "https://github.com/rumblex/angularattack2016-5oclock#readme",
+  "main": "index.js",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings install"
   },
-  "license": "ISC",
   "dependencies": {
     "@angular/common": "2.0.0-rc.1",
     "@angular/compiler": "2.0.0-rc.1",
@@ -30,7 +41,7 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
-    "jasmine-core": "2.4.1",
+    "jasmine-core": "^2.4.1",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^0.8.1"
