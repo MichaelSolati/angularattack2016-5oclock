@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
 
+import { Navbar } from '../navbar/navbar.component';
+import { YouAreHere } from '../you-are-here/you-are-here.component';
+import { Map } from '../map/map.component';
+
 @Component({
   selector: 'my-app',
-  template: '<h1>It\'s 5 O\'Clock Somewhere!</h1><p>Your project runs!</p>'
+  moduleId: module.id,
+  templateUrl: 'app.component.html',
+  directives: [Navbar, YouAreHere, Map]
 })
 export class AppComponent { }
