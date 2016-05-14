@@ -5,7 +5,7 @@ import { YouAreHere } from '../you-are-here/you-are-here.component';
 import { Map } from '../map/map.component';
 
 @Component({
-  selector: 'my-app',
+  selector: 'its-five-oclock',
   moduleId: module.id,
   templateUrl: 'app.component.html',
   directives: [Navbar, YouAreHere, Map]
