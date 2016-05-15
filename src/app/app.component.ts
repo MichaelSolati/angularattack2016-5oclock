@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
-import { Navbar } from '../navbar/navbar.component';
-import { YouAreHere } from '../you-are-here/you-are-here.component';
-import { Map } from '../map/map.component';
+import { Header } from './header/header.component';
+import { YouAreHere } from './you-are-here/you-are-here.component';
+import { Footer } from './footer/footer.component';
 
 @Component({
-  selector: 'my-app',
+  selector: 'its-five-oclock',
   moduleId: module.id,
-  templateUrl: 'app.component.html',
-  directives: [Navbar, YouAreHere, Map]
+  directives: [Header, YouAreHere, Footer],
+  template: require('./app.component.html')
 })
 export class AppComponent { }

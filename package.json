@@ -1,15 +1,29 @@
 {
   "name": "its-five-oclock",
   "version": "1.0.0",
-  "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
-  },
+  "description": "It's 5 O'Clock Somewhere celebrates socializing and drinking around the world!",
+  "author": [
+    "Adam Edwards adamcharlesewards@gmail.com",
+    "Michael Solati mkslt04@gmail.com"
+  ],
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumblex/angularattack2016-5oclock.git"
+  },
+  "homepage": "https://github.com/rumblex/angularattack2016-5oclock#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && npm run tsc && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build:dev": "rm -rf dist && npm run tsc && webpack --config config/webpack.dev.js --progress --profile --bail",
+    "start": "webpack-dev-server --inline --progress --port 3000",
+    "test": "karma start",
+    "tsc": "tsc",
+    "typescript": "tsc",
+    "prepublish": "npm run build && cp ./CNAME ./dist/CNAME && cp ./styles.less ./dist/styles.less && cp -r ./resources ./dist/resources",
+    "publish": "surge dist",
+    "postinstall": "typings install"
+  },
   "dependencies": {
     "@angular/common": "2.0.0-rc.1",
     "@angular/compiler": "2.0.0-rc.1",
@@ -17,23 +31,36 @@
     "@angular/http": "2.0.0-rc.1",
     "@angular/platform-browser": "2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "@angular/router": "2.0.0-rc.1",
     "@angular/router-deprecated": "2.0.0-rc.1",
-    "@angular/upgrade": "2.0.0-rc.1",
-    "angular2-in-memory-web-api": "0.0.7",
+    "angular2-google-maps": "^0.10.0",
     "bootstrap": "^3.3.6",
     "es6-shim": "^0.35.0",
     "material-design-lite": "^1.1.3",
-    "reflect-metadata": "^0.1.3",
+    "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.6",
-    "systemjs": "0.19.27",
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "jasmine-core": "2.4.1",
-    "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^0.8.1"
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.15.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "null-loader": "^0.1.1",
+    "phantomjs-prebuilt": "^2.1.7",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.9.0"
   }
 }

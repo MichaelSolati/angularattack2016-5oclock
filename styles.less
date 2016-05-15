@@ -1,33 +1,23 @@
 html, body, my-app {
-  background-color: #e0e0e0;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-  navbar {
+  header {
     height: 56px;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
-  you-are-here {
-    height: 200px;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    #location {
-      height: 225px;
-      width: 100vw;
-      margin: -25px 0 0 0;
-      padding: 25px 0 0 0;
+    nav .brand-logo {
+      left: 50% !important;
+      -webkit-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
+    }
+    img.logo {
+      height: 50px !important;
+      margin: 3px 0 !important;
     }
   }
-  map {
-    height: calc(~"100vh - 256px");
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+  you-are-here {
     .sebm-google-map-container {
-      height: calc(~"100vh - 256px");
+      height: calc(~"100vh - 281px");
       width: 100vw;
       margin: 0;
       padding: 0;
@@ -35,33 +25,61 @@ html, body, my-app {
   }
 }
 
-navbar {
+header {
   height: 64px;
   width: 100vw;
   margin: 0;
   padding: 0;
+  nav.purple {
+    border-bottom: 1px #4a148c solid;
+  }
+  img.logo {
+    height: 58px;
+    margin: 3px 0;
+  }
+  nav {
+    div {
+      a.brand-logo {
+        height: 64px;
+        padding-left: 16px;
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+      }
+      ul {
+        li {
+          a {
+            height: 64px;
+          }
+        }
+      }
+    }
+  }
 }
 you-are-here {
-  height: 200px;
+  height: 175px;
   width: 100vw;
   margin: 0;
   padding: 0;
   #location {
-    height: 225px;
+    height: 200px;
     width: 100vw;
     margin: -25px 0 0 0;
     padding: 25px 0 0 0;
   }
-}
-map {
-  height: calc(~"100vh - 264px");
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  #map {
-    height: calc(~"100vh - 264px");
+  .sebm-google-map-container {
+    height: calc(~"100vh - 289px");
     width: 100vw;
     margin: 0;
     padding: 0;
   }
+}
+footer.page-footer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.r16 {
+  padding-right: 16px;
 }
