@@ -21,11 +21,10 @@ export class Location implements OnInit{
   }
 
   getPlace() {
-    placeService.getWhereItIsFiveOClockRightNow()
-      .then(place => this.selectedPlace = place);
+    this.selectedPlace = this.placeService.getWhereItsFiveOClockRightNow();
   }
 
   ngOnInit() {
-    this.getPlace();
+    console.log(this.getPlace());
   }
 }

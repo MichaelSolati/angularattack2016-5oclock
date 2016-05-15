@@ -1,19 +1,17 @@
 <div id="location" class="center-align">
-  <img class="logo" src="/resources/images/logo/white_logo.png" alt="Logo">
+  <img class="logo" src="/resources/images/logo/Logo.png" alt="Purple Logo">
   <h4>in... {{selectedPlace.city}}</h4>
 </div>
 <sebm-google-map
-  [latitude]="lat"
-  [longitude]="lng"
+  [latitude]="selectedPlace.lat"
+  [longitude]="selectedPlace.lng"
   [zoom]="zoomLevel">
-  <!-- <div *ngFor="let city of cities">
     <sebm-google-map-marker
-      [latitude]="city.Lat"
-      [longitude]="city.Lng">
+      [latitude]="selectedPlace.lat"
+      [longitude]="selectedPlace.lng">
       <sebm-google-map-info-window>
-          <strong>{{city.City}}</strong>
+          <strong>{{selectedPlace.City}}</strong>
         </sebm-google-map-info-window>
     </sebm-google-map-marker>
 
-  </div> -->
 </sebm-google-map>

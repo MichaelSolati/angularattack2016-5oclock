@@ -1,5 +1,5 @@
 export class Place {
-    City: String;
-    Lat: Number;
-    Lng: Number;
+    city: String;
+    lat: Number;
+    lng: Number;
 }
