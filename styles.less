@@ -3,7 +3,7 @@ html, body, my-app {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
+  foc-header {
     height: 56px;
     nav .brand-logo {
       left: 50% !important;
@@ -15,9 +15,9 @@ html, body, my-app {
       margin: 3px 0 !important;
     }
   }
-  you-are-here {
+  foc-location {
     .sebm-google-map-container {
-      height: calc(~"100vh - 281px");
+      height: calc(~"100vh - 252px") !important;
       width: 100vw;
       margin: 0;
       padding: 0;
@@ -25,7 +25,7 @@ html, body, my-app {
   }
 }
 
-header {
+foc-header {
   height: 64px;
   width: 100vw;
   margin: 0;
@@ -57,25 +57,30 @@ header {
     }
   }
 }
-you-are-here {
+foc-location {
   height: 175px;
   width: 100vw;
   margin: 0;
   padding: 0;
-  #location {
+  div#location {
     height: 200px;
     width: 100vw;
     margin: -25px 0 0 0;
     padding: 25px 0 0 0;
+    img.logo {
+      height: 100px;
+      margin: 10px calc(~"50vw - 117px");
+      display: block;
+    }
   }
   .sebm-google-map-container {
-    height: calc(~"100vh - 289px");
+    height: calc(~"100vh - 260px");
     width: 100vw;
     margin: 0;
     padding: 0;
   }
 }
-footer.page-footer {
+foc-footer.page-footer {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
