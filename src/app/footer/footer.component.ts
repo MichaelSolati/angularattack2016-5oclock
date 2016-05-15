@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'footer',
+  selector: 'foc-footer',
   moduleId: module.id,
   template: require('./footer.component.html')
 })
