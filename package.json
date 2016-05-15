@@ -20,6 +20,8 @@
     "test": "karma start",
     "tsc": "tsc",
     "typescript": "tsc",
+    "prepublish": "npm run build && cp ./CNAME ./dist/CNAME && cp ./styles.less ./dist/styles.less",
+    "publish": "surge dist",
     "postinstall": "typings install"
   },
   "dependencies": {
