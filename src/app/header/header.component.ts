@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'navbar',
+  selector: 'header',
   moduleId: module.id,
-  template: require('./navbar.component.html')
+  template: require('./header.component.html')
 })
-export class Navbar {
+export class Header {
   constructor () {
 
   }

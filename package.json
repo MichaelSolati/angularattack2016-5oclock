@@ -14,13 +14,13 @@
   "homepage": "https://github.com/rumblex/angularattack2016-5oclock#readme",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "build:dev": "rm -rf dist && webpack --config config/webpack.dev.js --progress --profile --bail",
+    "build": "rm -rf dist && npm run tsc && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build:dev": "rm -rf dist && npm run tsc && webpack --config config/webpack.dev.js --progress --profile --bail",
     "start": "webpack-dev-server --inline --progress --port 3000",
     "test": "karma start",
     "tsc": "tsc",
     "typescript": "tsc",
-    "prepublish": "npm run build && cp ./CNAME ./dist/CNAME && cp ./styles.less ./dist/styles.less",
+    "prepublish": "npm run build && cp ./CNAME ./dist/CNAME && cp ./styles.less ./dist/styles.less && cp -r ./resources ./dist/resources",
     "publish": "surge dist",
     "postinstall": "typings install"
   },
