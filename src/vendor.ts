@@ -9,5 +9,7 @@ import '@angular/router-deprecated';
 // RxJS
 import 'rxjs';
 
+import { ANGULAR2_GOOGLE_MAPS_PROVIDERS } from 'angular2-google-maps/core';
+
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
