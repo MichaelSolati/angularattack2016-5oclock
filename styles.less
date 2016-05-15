@@ -17,7 +17,7 @@ html, body, my-app {
   }
   foc-location {
     .sebm-google-map-container {
-      height: calc(~"100vh - 281px");
+      height: calc(~"100vh - 252px") !important;
       width: 100vw;
       margin: 0;
       padding: 0;
@@ -62,18 +62,19 @@ foc-location {
   width: 100vw;
   margin: 0;
   padding: 0;
-  #location {
+  div#location {
     height: 200px;
     width: 100vw;
     margin: -25px 0 0 0;
     padding: 25px 0 0 0;
-    img {
+    img.logo {
       height: 100px;
-      margin: 0 auto;
+      margin: 10px calc(~"50vw - 117px");
+      display: block;
     }
   }
   .sebm-google-map-container {
-    height: calc(~"100vh - 289px");
+    height: calc(~"100vh - 260px");
     width: 100vw;
     margin: 0;
     padding: 0;

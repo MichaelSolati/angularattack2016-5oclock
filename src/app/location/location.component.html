@@ -1,6 +1,6 @@
-<div id="location" class="center-align">
-  <img class="logo" src="/resources/images/logo/Logo.png" alt="Purple Logo">
-  <h4>in... {{selectedPlace.city}}</h4>
+<div id="location" class="">
+  <img class="logo" src="/resources/images/logo/purple_logo.png" alt="Purple Logo">
+  <h4 class="center-align">in... {{selectedPlace.city}}</h4>
 </div>
 <sebm-google-map
   [latitude]="selectedPlace.lat"
@@ -10,7 +10,7 @@
       [latitude]="selectedPlace.lat"
       [longitude]="selectedPlace.lng">
       <sebm-google-map-info-window>
-          <strong>{{selectedPlace.City}}</strong>
+          <strong>{{selectedPlace.city}}</strong>
         </sebm-google-map-info-window>
     </sebm-google-map-marker>
 
