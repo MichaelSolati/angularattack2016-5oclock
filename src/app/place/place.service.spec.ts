@@ -9,7 +9,8 @@ describe('PlaceService', () => {
   beforeEachProviders(() => [PlaceService]);
 
   describe('#getPlace', () => {
-    it ('should return "Jamestown" when timezoneOffset of "0" is requested', inject([PlaceService], (subject: PlaceService) => {
+    it ('should return "Jamestown" when timezoneOffset of "0" is requested',
+    inject([PlaceService], (subject: PlaceService) => {
       let place: Place = {
         city: "Jamestown, Saint Helena",
         lat: -15.928634,
