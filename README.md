@@ -1,48 +1,28 @@
-# This is your [AngularAttack](https://www.angularattack.com) 2016 Repo
+# FiveOClock
 
-This repo is the start of your AngularAttack 2016 entry. It contains the simple [Angular2 starter](https://angular.io/docs/ts/latest/quickstart.html) files.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
-**DO NOT MAKE ANY CODE CHECKINS TO THIS REPOSITORY BEFORE THE COMPETITION OFFICIALLY BEGINS.**
+## Development server
 
-**DOING SO COULD DISQUALIFY YOU.**
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-However, before the competition starts, there are some things we encourage you to do to get prepared for the competition.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
+## Build
 
-### Step 1) Get Your Local Environment setup
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-Clone this repo locally, and make sure all your team members have access to it.
+## Running unit tests
 
-* Install the latest [Node / NPM](https://nodejs.org).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* `git clone git@github.com:rumblex/angularattack2016-5oclock.git`
+## Running end-to-end tests
 
-* `cd angularattack2016-5oclock`
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-* `npm install`
+## Further help
 
-* `npm start` will start the server locally to test that everything is running correctly
-
-
-### Step 2) Deploy Your App
-
-While you can't make any checkins before the comp, what you **can** do right now is deploy this sample app to [Surge](https://surge.sh) (our competition hosting provider).
-
-* `npm install -g surge`
-
-* `surge .`
-
-Note: please do not remove the `CNAME` file, as that tells it where to deploy to.
-
-If you receive an error message `"You do not have permission to publish to 5oclock.2016.angularattack.io"`, it might mean another team member has already deployed your project to Surge. Ask them to run the next step to give you access.
-
-### Step 3) Add Your Team Members to Surge
-
-* `surge . --add adamcharlesedwards@gmail.com,mkslt04@gmail.com`
-
-
-### Step 4) Wait til competition starts
-
-It begins at exactly [May 14 at 00:00 UTC](https://www.wolframalpha.com/input/?i=May+14,+2016+0:00+UTC). Once the competition starts,   you can write over this project.
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
